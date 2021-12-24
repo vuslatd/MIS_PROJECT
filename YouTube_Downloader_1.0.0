@@ -8,7 +8,7 @@ print("IZLENME SAYISI :", url.views)
 print("VIDEO RATINGI: ", url.rating)
 print("*"*100)
 if url.length > 120:
-    confirmation = "yes", "Yes", "YES"
+    confirmation = "yes"
     user_confirmation = input("VIDEO SURESI 2 DAKİKADAN DAHA UZUN, YİNE DE İNDİRME İŞLEMİNİ ONAYLIYOR MUSUNUZ? ")
     if user_confirmation == confirmation:
         stream = url.streams.filter(progressive=True).get_by_itag(22)
